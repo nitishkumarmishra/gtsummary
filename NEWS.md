@@ -1,5 +1,7 @@
 # gtsummary (development version)
 
+* Allow for grouping variable in tibble/flextable output via `tbl_stack(group_header=)`. Also includes a bug fix for as_flextable() where the spanning header was grouped incorrectly. (#558)
+
 * Bug fix when only categorical summary statistics were requested for continuous variables in `tbl_summary()` and `tbl_svysummary()` (#528)
 
 * Added `tbl_svysummary()` function to summarize complex and weighted survey designs. `tbl_svysummary` is now its own class that works with `add_n()`, `add_p()`,
